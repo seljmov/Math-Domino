@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightBlack"
+    android:padding="@dimen/main_padding">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clRoomCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/ivImage_Back"
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:src="@mipmap/room_back_2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageView
+            android:id="@+id/ivImage_Icon"
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:src="@mipmap/room_logo_1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvRoomName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Интегралы"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/customWhite"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@id/ivImage_Back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvRoomSubject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Математический анализ"
+            android:textSize="20sp"
+            android:textColor="@color/customGray"
+            app:layout_constraintTop_toBottomOf="@id/tvRoomName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/tvRoomSubject"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/ivAdd"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/room_btn_add"
+                android:layout_marginEnd="32dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/ivExit"/>
+
+            <TextView
+                android:id="@+id/tvAddUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Пригласить"
+                android:textSize="14sp"
+                android:textColor="@color/customWhite"
+                android:layout_marginEnd="32dp"
+                app:layout_constraintTop_toBottomOf="@id/ivAdd"
+                app:layout_constraintEnd_toStartOf="@id/tvExit"
+                app:layout_constraintStart_toStartOf="@id/ivAdd"/>
+
+            <ImageView
+                android:id="@+id/ivExit"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/room_btn_exit"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvExit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Покинуть"
+                android:textSize="14sp"
+                android:textColor="@color/customWhite"
+                app:layout_constraintTop_toBottomOf="@id/ivExit"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <ImageView
+                android:id="@+id/ivInfo"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/room_btn_info"
+                android:layout_marginStart="32dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/ivExit"/>
+
+            <TextView
+                android:id="@+id/tvInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Подробнее"
+                android:textSize="14sp"
+                android:textColor="@color/customWhite"
+                android:layout_marginStart="32dp"
+                app:layout_constraintTop_toBottomOf="@id/ivInfo"
+                app:layout_constraintStart_toEndOf="@id/tvExit"
+                app:layout_constraintEnd_toEndOf="@id/ivInfo"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvLoadTasksPages"
+        style="@style/AppTheme.Button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_height"
+        app:cardBackgroundColor="@color/customWhite"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="0dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@id/clRoomCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Решать задачи"
+            android:textColor="@color/lightBlack"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textAlignment="center"/>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#343846</color>
+    <color name="colorPrimaryDark">#292c37</color>
+    <color name="colorAccent">#D8D8D8</color>
+
+    <color name="double_light_Black">#5E626F</color>
+    <color name="lightBlack">#343846</color>
+    <color name="darkBlack">#292c37</color>
+    <color name="mini_darkBlack">#2D313D</color>
+    <color name="colorForHints">#999999</color>
+    <color name="customWhite">#D8D8D8</color>
+    <color name="customGray">#BDBDBD</color>
+
+    <color name="Red">#F32C2C</color>
+    <color name="light_Red">#FB4B4B</color>
+    <color name="Green">#389C3C</color>
+
+    <!-- Switch button colors  -->
+    <color name="Pink">#E7447E</color>
+    <color name="Dark">#292c37</color>
+
+    <color name="lighter_light_black">#343948</color>
+
+    <color name="grey">#3F4750</color>
+
+    <!--  Colors for Domino button state  -->
+    <color name="domino_dark">#292C37</color>
+    <color name="domino_mini_dark">#3A3C4B</color>
+    <color name="domino_pink">#E7447E</color>
+    <color name="domino_green">#43A047</color>
+    <color name="domino_red">#E53935</color>
+
+    <color name="light_pink">#EC407A</color>
+
+    <color name="Blue">#42A5F5</color>
+
+    <!-- NEW THEME COLORS -->
+    <color name="newFirstColor">#2a2c39</color>
+    <color name="newSecondColor">#363a4e</color>
+    <color name="newPrimaryColor">#02b1e3</color>
+    <color name="newWhiteColor">#f3f5ff</color>
+    <color name="newGrayColor">#939aaa</color>
+    <color name="newDarkGrayColor">#5d616b</color>
+
+</resources>

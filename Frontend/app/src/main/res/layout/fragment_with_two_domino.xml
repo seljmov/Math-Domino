@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightBlack">
+
+    <View
+        android:id="@+id/center"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Domino1"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        app:cardBackgroundColor="@color/darkBlack"
+        app:cardCornerRadius="22dp"
+        app:cardElevation="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:2"
+        app:layout_constraintEnd_toStartOf="@+id/center"
+        app:layout_constraintHorizontal_bias="0.66"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.18">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/domino_vertical" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Domino2"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        app:cardBackgroundColor="@color/darkBlack"
+        app:cardCornerRadius="22dp"
+        app:cardElevation="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Domino1"
+        app:layout_constraintDimensionRatio="1:2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.33"
+        app:layout_constraintStart_toEndOf="@+id/center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/domino_vertical" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:layout_margin="5dp"
+        android:id="@+id/Domino11"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@id/Domino1"
+        app:layout_constraintRight_toRightOf="@id/Domino1"
+        app:layout_constraintLeft_toLeftOf="@id/Domino1"
+        app:layout_constraintBottom_toTopOf="@id/Domino12"
+        android:elevation="100dp"/>
+    <ImageView
+        android:layout_margin="5dp"
+        android:id="@+id/Domino12"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintRight_toRightOf="@id/Domino1"
+        app:layout_constraintLeft_toLeftOf="@id/Domino1"
+        app:layout_constraintTop_toBottomOf="@id/Domino11"
+        app:layout_constraintBottom_toBottomOf="@id/Domino1"
+        android:elevation="100dp"/>
+
+    <ImageView
+        android:layout_margin="5dp"
+        android:id="@+id/Domino21"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@id/Domino2"
+        app:layout_constraintRight_toRightOf="@id/Domino2"
+        app:layout_constraintLeft_toLeftOf="@id/Domino2"
+        app:layout_constraintBottom_toTopOf="@id/Domino22"
+        android:elevation="100dp"/>
+    <ImageView
+        android:layout_margin="5dp"
+        android:id="@+id/Domino22"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintRight_toRightOf="@id/Domino2"
+        app:layout_constraintLeft_toLeftOf="@id/Domino2"
+        app:layout_constraintTop_toBottomOf="@id/Domino21"
+        app:layout_constraintBottom_toBottomOf="@id/Domino2"
+        android:elevation="100dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:id="@+id/begin1"
+        app:cardCornerRadius="5dp"
+        app:cardBackgroundColor="@color/Pink"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Domino1"
+        app:layout_constraintStart_toStartOf="@id/Domino1"
+        app:layout_constraintEnd_toEndOf="@id/Domino1">
+
+        <TextView
+            android:id="@+id/text_button_1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/customWhite"
+            android:text="Начать решать"
+            android:textSize="22sp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:id="@+id/begin2"
+        app:cardCornerRadius="5dp"
+        app:cardBackgroundColor="@color/Pink"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Domino2"
+        app:layout_constraintStart_toStartOf="@id/Domino2"
+        app:layout_constraintEnd_toEndOf="@id/Domino2">
+
+        <TextView
+            android:id="@+id/text_button_2"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/customWhite"
+            android:text="Начать решать"
+            android:textSize="22sp"/>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

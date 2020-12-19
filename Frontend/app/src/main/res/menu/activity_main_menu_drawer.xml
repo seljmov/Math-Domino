@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/nav_profile"
+            android:title="@string/menu_my_page" />
+        <item
+            android:id="@+id/nav_rooms"
+            android:icon="@drawable/nav_rooms"
+            android:title="@string/menu_rooms" />
+        <item
+            android:id="@+id/nav_rating"
+            android:icon="@drawable/nav_rating"
+            android:title="@string/menu_rating" />
+        <item
+            android:id="@+id/nav_rooms_history"
+            android:icon="@drawable/nav_history"
+            android:title="@string/menu_rooms_history" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/nav_settings"
+            android:title="@string/menu_settings" />
+    </group>
+</menu>

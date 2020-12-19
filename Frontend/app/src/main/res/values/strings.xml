@@ -1,0 +1,96 @@
+<resources>
+
+    <!-- Main strings -->
+    <string name="app_name">Science</string>
+
+    <!-- Strings for bottom navigation -->
+    <string name="title_rating">Рейтинг</string>
+    <string name="title_rooms">Мои комнаты</string>
+    <string name="title_profile">Профиль</string>
+
+    <!-- Strings for Room bottom navigation -->
+    <string name="title_room_info">Комната</string>
+    <string name="title_students_list">Список студентов</string>
+
+    <!-- Strings for auth activity -->
+    <string name="auth_game_name">Science Go</string>
+    <string name="auth_power">Powered by</string>
+    <string name="auth_team_name">TooManyQuestions</string>
+
+    <!-- Strings for join activity -->
+    <string name="join_reg">Зарегистрироваться</string>
+    <string name="join_have_account">Уже есть аккаунт?</string>
+    <string name="join_login">Войти</string>
+
+    <!-- Strings for login activity -->
+    <string name="login_title">Авторизация</string>
+    <string name="login_email">E-mail</string>
+    <string name="login_password">Пароль</string>
+    <string name="login_back">Назад</string>
+
+    <!-- Strings for registration activity -->
+    <string name="reg_title">Регистрация</string>
+    <string name="reg_add_info">Заполните поля</string>
+    <string name="reg_name">Имя</string>
+    <string name="reg_surname">Фамилия/Отчество</string>
+    <string name="reg_icon_task">Нажмите на аватар, чтобы изменить его.</string>
+    <string name="reg_password_task">Придумайте хороший и надежный пароль.</string>
+    <string name="reg_email">Email</string>
+    <string name="reg_password">Пароль</string>
+    <string name="reg_conf_password">Подтвердить пароль</string>
+    <string name="reg_teacher">Преподаватель</string>
+    <string name="reg_student">Студент</string>
+    <string name="reg_register">Зарегистрироваться</string>
+    <string name="reg_proceed">Продолжить</string>
+    <string name="reg_back">Вернуться назад</string>
+
+    <!--  Strings for teacher room fragment  -->
+    <string name="room_create_Bnt">Создать комнату</string>
+    <string name="room_null_List">Список пуст</string>
+    <string name="room_null_List2">Вы еще не создали ни одной комнаты</string>
+
+    <!--  Strings for room create -->
+    <string name="room_create_room">Создать комнату</string>
+    <string name="room_set_date">Дата и время начала</string>
+    <string name="room_set_date_btn">Установить дату и время</string>
+    <string name="room_set_dateAndTime">Нажмите сюда, чтобы установить дату</string>
+    <string name="room_create_back">Отменить и вернуться назад</string>
+    <string name="room_activity_name">Создание комнаты</string>
+    <string name="room_name">Название комнаты</string>
+    <string name="room_name_hint">Введите название комнаты</string>
+    <string name="room_subject">Предмет</string>
+    <string name="room_date">Изменить дату</string>
+    <string name="room_time">Изменить время</string>
+    <string name="room_gamer_count">Количество игроков</string>
+    <string-array name="subjects">
+        <item>Выберите предмет</item>
+        <item>Математический анализ</item>
+        <item>Алгебра и геометрия</item>
+        <item>Дискретная математика</item>
+        <item>Теория вероятностей</item>
+        <item>Программирование</item>
+    </string-array>
+    <string name="title_activity_room_medium_status22">RoomMediumStatus22</string>
+    <string name="title_room_data">О комнате</string>
+    <string name="title_table">Список студентов</string>
+
+    <!--  Strings for main menu activity  -->
+    <string name="menu_my_page">Мой профиль</string>
+    <string name="menu_rooms">Комнаты</string>
+    <string name="menu_rating">Рейтинг</string>
+    <string name="menu_rooms_history">История игр</string>
+    <string name="menu_favorite_tasks">Избранные задачи</string>
+    <string name="menu_settings">Настройки</string>
+
+    <!--  Strings for Settings -->
+    <string name="settings_exit">Выйти из аккаунта</string>
+    <string name="title_activity_room_info">RoomInfoActivity</string>
+    <string name="tab_text_1">Комнаты</string>
+    <string name="tab_text_2">Профиль</string>
+    <string name="title_activity_room_medium">RoomMediumActivity</string>
+    <string name="title_activity_room_game">RoomGameActivity</string>
+    <string name="title_activity_found_room">FoundRoomActivity</string>
+    <string name="title_activity_domino">DominoActivity</string>
+    <string name="title_activity_menu">MenuActivity</string>
+
+</resources>

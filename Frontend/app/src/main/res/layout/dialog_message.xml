@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/darkBlack"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Упс..."
+        android:layout_marginBottom="4dp"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:textColor="@color/customWhite"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:stateListAnimator="@null"
+        android:layout_marginBottom="15dp"
+        android:background="@color/customWhite"/>
+
+    <TextView
+        android:id="@+id/tvMessageText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="text"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textColor="@color/customWhite"/>
+
+    <Button
+        android:id="@+id/btnDismiss"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/lightBlack"
+        android:text="Закрыть"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        android:textColor="@color/customWhite"
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.science">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_app"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_app_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Main.ui.main.Pages.profile.settings.SettingsActivity"
+            android:label="@string/title_activity_menu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Main.MenuActivity"
+            android:label="@string/title_activity_menu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Main.ui.main.Pages.rooms.Teacher.CreateRoomPack.CreateRoomProceed"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Main.ui.main.Pages.rooms.RoomGameUI.GameActivity.GameTaskActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Main.ui.main.Pages.rooms.RoomGameUI.Dominoes.DominoesTabs.DominoActivity"
+            android:label="@string/title_activity_domino"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Main.ui.main.Pages.rooms.Student.FoundRoom.FoundRoomUI.FoundRoomActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Main.ui.main.Pages.rooms.RoomGameUI.RoomInfo.RoomGameActivity"
+            android:label="@string/title_activity_room_game"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Main.ui.main.Pages.rooms.RoomMediumUI.RoomMediumActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Main.ui.main.Pages.rooms.Teacher.CreateRoomPack.CreateRoomActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppThemeNoBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".UserAuthPackages.Reg.RegProceedActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppThemeNoBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".UserAuthPackages.Reg.RegActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppThemeNoBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".UserAuthPackages.Login.LoginActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppThemeNoBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".UserAuthPackages.JoinActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppThemeNoBar" />
+        <activity
+            android:name=".UserAuthPackages.Auth.AuthActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppThemeNoBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

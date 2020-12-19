@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_rooms">
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.science.Main.ui.main.Pages.profile.ProfileFragment"
+        android:label="@string/menu_my_page"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_rooms"
+        android:name="com.example.science.Main.ui.main.Pages.rooms.RoomsFragment"
+        android:label="@string/menu_rooms"
+        tools:layout="@layout/fragment_rooms" />
+
+    <fragment
+        android:id="@+id/nav_rating"
+        android:name="com.example.science.MainMenu.ui.rating.RatingFragment"
+        android:label="@string/menu_rating"
+        tools:layout="@layout/fragment_rating" />
+
+    <fragment
+        android:id="@+id/nav_rooms_history"
+        android:name="com.example.science.MainMenu.ui.rooms_history.RoomsHistoryFragment"
+        android:label="@string/menu_rooms_history"
+        tools:layout="@layout/fragment_rooms_history" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.science.Main.ui.main.Pages.profile.settings.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
+
+</navigation>

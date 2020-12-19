@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="8dp"
+    android:padding="4dp"
+    android:layout_gravity="center_vertical"
+    android:orientation="horizontal"
+    android:id="@+id/cvGamerTableItem">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/customWhite">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvPlaceCard"
+            android:layout_width="8dp"
+            android:layout_height="0dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="#FFD700"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp">
+
+            <TextView
+                android:id="@+id/tvPlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="24sp"
+                android:textColor="@color/lightBlack"
+                android:layout_marginStart="12dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/imUserIcon"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <ImageView
+                android:id="@+id/imUserIcon"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/user"
+                android:layout_marginStart="4dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvPlace"
+                app:layout_constraintEnd_toStartOf="@id/tvTableGamerUsername"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvTableGamerUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="username"
+                android:textSize="16sp"
+                android:textStyle="bold|italic"
+                android:textColor="@color/lightBlack"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toEndOf="@id/imUserIcon"
+                app:layout_constraintBottom_toTopOf="@id/tvTableGamerPoints"/>
+
+            <TextView
+                android:id="@+id/tvTableGamerPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="16sp"
+                android:textColor="@color/lightBlack"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintStart_toEndOf="@id/imUserIcon"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvTableMinus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-4"
+                android:textSize="16sp"
+                android:textColor="@color/Red"
+                android:layout_marginEnd="24dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvTablePlus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+4"
+                android:textSize="16sp"
+                android:textColor="@color/Green"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/tvTableMinus"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
